@@ -1,0 +1,177 @@
+/* Max Width 1200px */
+@media (max-width: 1200px) {
+  /* Hero */
+  .hero {
+    height: 45vh;
+  }
+
+  .hero-title {
+    font-size: 100px;
+  }
+
+  /* Product List */
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Footer */
+  .footer {
+    gap: 40px;
+  }
+}
+
+/* Max Width 910px */
+@media (max-width: 910px) {
+  /* Hero */
+  .hero {
+    height: 35vh;
+  }
+
+  .hero-title {
+    font-size: 80px;
+  }
+
+  .product-title {
+    font-size: 25px;
+  }
+
+  /* Footer */
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .copyright {
+    margin-top: 20px;
+  }
+}
+
+/* Max Width 720px */
+@media (max-width: 720px) {
+  /* Hero */
+  .hero {
+    height: 30vh;
+  }
+
+  /* Product List */
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Card Container */
+  .card-container .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .product-list-container {
+    grid-template-columns: 1fr;
+  }
+
+  .total-container {
+    width: 300px;
+    position: absolute;
+    right: 30px;
+    top: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .total {
+    white-space: nowrap;
+  }
+
+  .product-add-btn {
+    margin: 0;
+  }
+}
+
+/* Max Width 550px */
+@media (max-width: 550px) {
+  /* Res Menu Btn */
+  .res-menu-btn {
+    display: initial;
+  }
+
+  .header-logo {
+    margin: auto;
+  }
+
+  /* Nav List */
+  .nav-list {
+    position: absolute;
+    background: #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 100%;
+    clip-path: circle(0% at 0% 0%);
+    transition: 0.6s;
+  }
+
+  .nav-list-item {
+    width: 100%;
+  }
+
+  .nav-list-item:hover {
+    background-color: var(--bg-color);
+  }
+
+  .nav-link {
+    display: block;
+    padding: 15px;
+  }
+
+  .nav-list.open-menu {
+    clip-path: circle(145% at 0% 0%);
+  }
+
+  /* Hero */
+  .hero {
+    height: 25vh;
+  }
+
+  .hero-title {
+    font-size: 60px;
+  }
+
+  /* Product List */
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .product-title {
+    font-size: 20px;
+  }
+
+  .product-delete-btn {
+    margin: 0;
+  }
+
+  .total-container {
+    right: -18px;
+  }
+
+  .total-container .product-add-btn {
+    width: 100px;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .error-title {
+    top: 10%;
+    font-size: 32px;
+  }
+}
+
+/* Max Width 400px */
+@media (max-width: 400px) {
+  /* Social */
+  .social .bx {
+    font-size: 15px;
+    padding: 8px;
+  }
+}
